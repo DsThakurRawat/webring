@@ -7,6 +7,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"slices"
 	"strings"
 
 	_ "embed"
@@ -21,6 +22,7 @@ type WebringEntry struct {
 
 //go:embed webring.json
 var webringRaw []byte
+var hostsToIgnore = []string{"ring.seggs.lol", "seggs.lol", "www.seggs.lol"}
 
 func main() {
 	var webring []WebringEntry
@@ -32,7 +34,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		host := r.Host
 
-		if strings.HasSuffix(host, ".seggs.lol") && host != "ring.seggs.lol" && host != "seggs.lol" {
+		if strings.HasSuffix(host, ".seggs.lol") && slices.Contains(hostsToIgnore, host) {
 			sub := strings.TrimSuffix(host, ".seggs.lol")
 			for _, entry := range webring {
 				if entry.Name == sub {
