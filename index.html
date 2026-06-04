@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        var saved;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+      })();
+    </script>
     <title>threadlocked · webring</title>
     <style>
       :root {
@@ -330,11 +338,7 @@
           try { localStorage.setItem("theme", theme); } catch (e) {}
         }
 
-        var saved;
-        try { saved = localStorage.getItem("theme"); } catch (e) {}
-        var prefersDark = window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches;
-        apply(saved || (prefersDark ? "dark" : "light"));
+        apply(root.dataset.theme || "light");
 
         btn.addEventListener("click", function () {
           apply(root.dataset.theme === "dark" ? "light" : "dark");
