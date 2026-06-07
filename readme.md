@@ -1,8 +1,6 @@
 # threadlocked
 
-a dead simple [webring](https://en.wikipedia.org/wiki/Webring) api server for threadlocked.
-
-join our [discord server](https://discord.gg/gqyV3nyjwE) to meet cool engineers and hackers :p  
+a dead simple [webring](https://en.wikipedia.org/wiki/Webring) server for threadlocked. join our [discord server](https://discord.gg/gqyV3nyjwE) to meet cool engineers and hackers :p  
 
 <div> 
 <a href="https://discord.gg/gqyV3nyjwE">
@@ -23,7 +21,7 @@ append your entry to [`webring.json`](./webring.json) and open a pr:
 }
 ```
 
-once your entry gets added to the webring, you can use `https://<name>.seggs.lol` as a redirect to your site.
+once your entry gets added to the webring, you can use `https://<name>.seggs.lol` as a redirect to your site. 
 
 ## how to add prev / next / random to your site?
 
@@ -43,3 +41,15 @@ the base url for the server is `https://ring.seggs.lol`. to add previous/next/ra
   next site →
 </a>
 ```
+
+## badges
+
+credits to [@nithitsuki](https://github.com/nithitsuki) for making these 88x31 badges
+
+<img width="88" height="31" alt="image" src="https://github.com/user-attachments/assets/86fc434f-8b29-4628-b0a3-33cdf4d487c0" />
+
+<img width="88" height="31" alt="image" src="https://github.com/user-attachments/assets/f4bd0e19-e15e-46ce-9505-2a373f579a73" />
+
+
+
+
