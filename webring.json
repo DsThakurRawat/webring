@@ -195,18 +195,23 @@
     "url": "https://www.ifarhan.tech/"
   },
   {
-	  "name": "rylen",
-	  "gh": "rylena",
-	  "url": "https://RylenAnil.xyz"
+    "name": "rylen",
+    "gh": "rylena",
+    "url": "https://RylenAnil.xyz"
   },
   {
-	  "name": "chaitanya",
-	  "gh": "chtnnh",
-	  "url": "https://me.chtnnhfoundation.org"
+    "name": "chaitanya",
+    "gh": "chtnnh",
+    "url": "https://me.chtnnhfoundation.org"
   },
   {
-    "name": "Devang",
+    "name": "devang",
     "gh": "Vangax",
     "url": "https://vangax.github.io/"
+  },
+  {
+    "name": "airi",
+    "gh": "ZahinTapadar",
+    "url": "https://zahin-tapadar.vercel.app/"
   }
 ]
